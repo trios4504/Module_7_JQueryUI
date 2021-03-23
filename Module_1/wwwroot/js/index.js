@@ -67,7 +67,7 @@ $(document).ready(function () {
             image = data[element];
 
             td = $("<td></td>");
-            $("<span></span>").text(image.imageAlt).css("margin-right", "10px")
+            $("<span></span>").addClass("Images").text(image.imageAlt).css("margin-right", "10px")
                 .appendTo(td);
             tr.append(td);
 
@@ -124,5 +124,23 @@ $(document).ready(function () {
     $("#DialogFormBox").dialog({
         autoOpen: false,
         modal: true
+    });
+
+    $("#ImageTabel").on("click", ".Images", function () {
+        $.when($.ajax({
+            url: "/Home/ImageLike",
+            type: "POST"
+        })).then(function (data) {
+            if (data == true) {
+                $.toast({
+                    heading: "Success",
+                    text: "You liked the image",
+                    icon: "success",
+                    loader: true,
+                    loaderBg: "blue"
+                });
+            }
+        }
+        );
     });
 });
