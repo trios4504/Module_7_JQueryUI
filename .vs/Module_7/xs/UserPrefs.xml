@@ -1,25 +1,27 @@
 ﻿<Properties StartupConfiguration="{4AC866CC-D4EB-4720-8B78-3C3E41C80BDD}|Module_1">
   <MonoDevelop.Ide.ItemProperties.Module__7 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Module_1/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Module_1/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="Module_1/Views/Home/Index.cshtml" Line="12" Column="15" />
+      <File FileName="Module_1/Views/Home/Index.cshtml" Line="39" Column="5" />
       <File FileName="Module_1/wwwroot/js/index.js" />
       <File FileName="Module_1/Views/Shared/_Layout.cshtml" />
       <File FileName="Module_1/Views/Shared/_ValidationScriptsPartial.cshtml" />
       <File FileName="Module_1/Controllers/HomeController.cs" />
       <File FileName="Module_1/Models/User.cs" />
       <File FileName="Module_1/Models/Images.cs" />
-      <File FileName="Module_1/Program.cs" Line="16" Column="1" />
+      <File FileName="Module_1/Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Module_7" expanded="True" selected="True">
-            <Node name="Midterm_Project" expanded="True">
+          <Node name="Module_7" expanded="True">
+            <Node name="Module_7" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
