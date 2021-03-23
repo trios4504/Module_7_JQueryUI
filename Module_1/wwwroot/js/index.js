@@ -4,7 +4,15 @@ $("<button></button>").attr("id", "SignupButton").text("Sign Up").appendTo("#Mai
 $("</br>").appendTo("#MainContainerDiv");
 
 var imageContainer = $("<div></div>").attr("id", "ImageContainer").appendTo("#MainContainerDiv");
-var table = $("<table></table>").appendTo(imageContainer);
+var table = $("<table></table>").attr("id", "ImageTabel").appendTo(imageContainer);
+var thead = $("<thead></thead>").appendTo(table);
+var headerRow = $("<tr></tr>").appendTo(thead);
+$("<th></th>").appendTo(headerRow);
+$("<th></th>").appendTo(headerRow);
+$("<th></th>").appendTo(headerRow);
+$("<th></th>").appendTo(headerRow);
+$("<th></th>").appendTo(headerRow);
+
 var tbody = $("<tbody></tbody>").attr("id", "ImageBodyContainer").appendTo(table);
 
 $("</br>").appendTo("#MainContainerDiv");
@@ -67,7 +75,7 @@ $(document).ready(function () {
         }
 
         tbody.append(tr);
-
+        $("#ImageTabel").DataTable();
 
         //ImageContainer
         //$("<span></span>").attr("id", "Image1").text("Image 1").appendTo("#MainContainerDiv");
@@ -116,5 +124,5 @@ $(document).ready(function () {
     $("#DialogFormBox").dialog({
         autoOpen: false,
         modal: true
-    })
+    });
 });
